@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema Chamador de Senhas</title>
+
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script src="lib/scripts.js"></script>
+  </head>
+  <body>
+    <!-- <div class="barraTop">&nbsp;</div> -->
+    <div class="container page">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="imagens/unisinos.png"
+              alt="Logo"
+              width="30"
+              height="30"
+              class="d-inline-block align-text-top"
+            />
+            UNIVERSIDADE DO VALE DO RIO DO SINOS
+          </a>
+
+          <div class="row botoes">
+            <div class="col-xs-6">
+              <button id="botaoEsquerda">Chamada Anterior Normal</button>
+              <button id="botaoBaixo">Chamada Anterior Preferencial</button>
+            </div>
+            <div class="col-xs-6">
+              <button id="botaoDireita">Próxima Chamada Normal</button>
+              <button id="botaoCima">Próxima Chamada Preferencial</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container-principal">
+        <img
+          class="bg-default"
+          src="./imagens/bg-default.jpg"
+          alt="imagem de fundo"
+        />
+
+        <div class="container-senhas">
+          <div class="ultimaSenha">
+            <br />
+            <span id="ultimaSenhaTexto">ULTIMA CHAMADA NORMAL</span><br />
+            <span>Senha </span>
+            <span id="ultimaSenhaNumero">0000</span>
+          </div>
+
+          <div class="ultimaSenhaPreferencial">
+            <br />
+            <span id="ultimaSenhaTextoPreferencial"
+              >ULTIMA CHAMADA PREFERENCIAL</span
+            ><br />
+            <span>Senha </span>
+            <span id="ultimaSenhaNumeroPreferencial">0000</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="senhaAtual">
+        <div>
+          <span class="senhaAtualTexto">SENHA &nbsp;</span>
+        </div>
+        <div>
+          <span id="senhaAtualNumero">0000</span>
+        </div>
+        <input type="hidden" id="senhaNormal" value="0000" />
+        <input type="hidden" id="senhaPrioridade" value="P000" />
+      </div>
+    </div>
+    <audio id="audioChamada" src="audio/chamada.wav"></audio>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

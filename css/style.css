@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic");
+
+
+html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+  }
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+}
+
+.container-page {
+	width: 100%;
+}
+
+.container-principal {
+	display: flex;
+	width: 100%;
+}
+
+.container-senhas {
+	background-color: #465863;
+	width: 35%;
+}
+
+.bg-default {
+	width: 65%;
+	aspect-ratio: 16/9;
+}
+
+.senhaAtual{
+	display: flex;
+    text-align: center;
+    background-color: #003a5f;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 6em;
+}
+
+.senhaAtualTexto{
+	font-size: 40pt;
+	font-weight: 400;
+}
+
+#senhaAtualNumero{
+	font-size: 66pt;
+	font-weight: 800;
+}
+
+.ultimaSenha{
+	font-weight: 800;
+	text-align: center;
+	background-color: #ccc;
+	height: 130px;
+	margin-top: 20px;
+	width: 100%;
+}
+
+#ultimaSenhaTexto{
+	font-size: 20px;
+	color: rgb(6, 66, 177);
+}
+
+#ultimaSenhaNumero{
+	font-size: 40px;
+	color: black;
+}
+
+.ultimaSenhaPreferencial{
+	font-weight: 800;
+	text-align: center;
+	background-color: #ccc;
+	height: 130px;
+	margin-top: 20px;
+	width: 100%;
+}
+
+#ultimaSenhaTextoPreferencial{
+	font-size: 20px;
+	color: rgb(206, 2, 2);
+}
+
+#ultimaSenhaNumeroPreferencial{
+	font-size: 40px;
+	color: black;
+}
+
+.unisinosLogo{
+	max-width: 100px;
+}
+
+.unisinosTexto{
+	font-size: 27pt;
+	font-weight: 800;
+	color: #003a5f;
+}
+
+audio{
+	display: none;
+}
