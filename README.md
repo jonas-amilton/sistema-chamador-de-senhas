@@ -4,7 +4,7 @@
 
 Este é um projeto de refatoração em JavaScript puro de um sistema de chamada de senhas originalmente desenvolvido em jQuery.
 
-O código original foi baseado no projeto [SistemachamadordeSenhaJS](link original) por [Luis Teles](https://github.com/luisotavioosi/SistemachamadordeSenhaJS.git).
+O código original foi baseado no projeto [SistemachamadordeSenhaJS](https://github.com/luisotavioosi/SistemachamadordeSenhaJS.git) por [Luis Teles](https://github.com/luisotavioosi/).
 
 ## Motivação
 
