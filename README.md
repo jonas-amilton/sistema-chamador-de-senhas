@@ -1,22 +1,35 @@
-# Sistema chamador de Senha
- 
-![Screenshot](sistema-chamador-de-senhas.jpeg)
+# Sistema Chamador de Senha
+
+![Captura de Tela](sistema-chamador-de-senhas.jpeg)
 
 Este é um projeto de refatoração em JavaScript puro de um sistema de chamada de senhas originalmente desenvolvido em jQuery.
 
 O código original foi baseado no projeto [SistemachamadordeSenhaJS](https://github.com/luisotavioosi/SistemachamadordeSenhaJS.git) por [Luis Teles](https://github.com/luisotavioosi/).
 
+## Descrição
+
+O Sistema Chamador de Senha é um aplicativo que permite aos usuários gerenciar a chamada de senhas em uma fila, seja para atendimento normal ou preferencial.
+
 ## Motivação
 
-A motivação por trás desta refatoração foi práticar JavaScript puro com um projeto open source da comunidade
+Decidi refatorar este projeto como uma forma de praticar minhas habilidades em JavaScript puro. Além disso, acredito que trazer esse sistema para uma tecnologia mais moderna pode ser útil para a comunidade.
 
 ## Recursos
 
-- Chamada Normal
-- Chamada Preferencial
+- **Chamada Normal:** Permite chamar a próxima senha na fila de atendimento normal.
+- **Chamada Preferencial:** Permite chamar a próxima senha na fila de atendimento preferencial.
 
-## Uso
+## Como Usar
 
-Como usar o sistema
+1. Clone este repositório: `git clone https://github.com/jonas-amilton/sistema-chamador-de-senhas.git`
+2. Navegue até o diretório do projeto: `cd sistema-chamador-de-senhas`
+3. Abra o arquivo `index.html` em seu navegador.
+4. Use os botões "Chamada Normal" e "Chamada Preferencial" para chamar as próximas senhas nas filas correspondentes.
 
-- Possui um controle no header
+## Referência ao Projeto Original
+
+Este projeto é uma refatoração do projeto original [SistemachamadordeSenhaJS](https://github.com/luisotavioosi/SistemachamadordeSenhaJS.git) criado por Luis Teles. Optei por basear meu trabalho em sua implementação para aproveitar a funcionalidade básica e trazer uma abordagem mais atual.
+
+## Licença
+
+Este projeto está sob a [Licença MIT](LICENSE).
