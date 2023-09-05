@@ -7,10 +7,11 @@
 
     <link href="css/style.css" rel="stylesheet" />
 
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js" defer></script>
+    <script src="js/date.js" defer></script>
   </head>
-  <body>
-    <header>
+  <body onload="time()">
+    <!-- <header>
       <nav>
         <button id="botaoEsquerda">Chamada Anterior Normal</button>
         <button id="botaoBaixo">Chamada Anterior Preferencial</button>
@@ -18,9 +19,22 @@
         <button id="botaoDireita">Próxima Chamada Normal</button>
         <button id="botaoCima">Próxima Chamada Preferencial</button>
       </nav>
-    </header>
+    </header> -->
+
+    <div class="display">
+      
+
+      <div class="column-right"></div>
+      <div class="column-down">
+
+        <h2 id="horas">18:00</h2>
+
+      </div>
+
+    </div>
+ 
     
-    <div class="container-page">
+    <!-- <div class="container-page">
       <div class="container-principal">
         <img
           class="bg-default"
@@ -57,9 +71,8 @@
         <input type="hidden" id="senhaNormal" value="0000" />
         <input type="hidden" id="senhaPrioridade" value="P000" />
       </div>
-    </div>
+    </div> -->
     <audio id="audioChamada" src="audio/chamada.wav"></audio>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
