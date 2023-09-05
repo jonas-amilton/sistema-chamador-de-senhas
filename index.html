@@ -11,7 +11,7 @@
     <script src="js/date.js" defer></script>
   </head>
   <body onload="time()">
-    <!-- <header>
+    <header>
       <nav>
         <button id="botaoEsquerda">Chamada Anterior Normal</button>
         <button id="botaoBaixo">Chamada Anterior Preferencial</button>
@@ -19,15 +19,44 @@
         <button id="botaoDireita">Próxima Chamada Normal</button>
         <button id="botaoCima">Próxima Chamada Preferencial</button>
       </nav>
-    </header> -->
+    </header>
 
     <div class="display">
       
 
-      <div class="column-right"></div>
+      <div class="column-right">
+        <div class="container-senhas">
+          <div class="ultimaSenha">
+            <br />
+            <span id="ultimaSenhaTexto">ULTIMA CHAMADA NORMAL</span><br />
+            <span>Senha </span>
+            <span id="ultimaSenhaNumero">0000</span>
+          </div>
+
+          <div class="ultimaSenhaPreferencial">
+            <br />
+            <span id="ultimaSenhaTextoPreferencial"
+              >ULTIMA CHAMADA PREFERENCIAL</span
+            ><br />
+            <span>Senha </span>
+            <span id="ultimaSenhaNumeroPreferencial">0000</span>
+          </div>
+        </div>
+      </div>
       <div class="column-down">
 
         <h2 id="horas">18:00</h2>
+
+        <div class="senhaAtual">
+          <div>
+            <span class="senhaAtualTexto">SENHA &nbsp;</span>
+          </div>
+          <div>
+            <span id="senhaAtualNumero">0000</span>
+          </div>
+          <input type="hidden" id="senhaNormal" value="0000" />
+          <input type="hidden" id="senhaPrioridade" value="P000" />
+        </div>
 
       </div>
 
