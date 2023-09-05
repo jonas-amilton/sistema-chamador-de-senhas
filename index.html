@@ -16,34 +16,17 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
-    <!-- <div class="barraTop">&nbsp;</div> -->
-    <div class="container page">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img
-              src="imagens/unisinos.png"
-              alt="Logo"
-              width="30"
-              height="30"
-              class="d-inline-block align-text-top"
-            />
-            UNIVERSIDADE DO VALE DO RIO DO SINOS
-          </a>
+    <header>
+      <nav>
+        <button id="botaoEsquerda">Chamada Anterior Normal</button>
+        <button id="botaoBaixo">Chamada Anterior Preferencial</button>
 
-          <div class="row botoes">
-            <div class="col-xs-6">
-              <button id="botaoEsquerda">Chamada Anterior Normal</button>
-              <button id="botaoBaixo">Chamada Anterior Preferencial</button>
-            </div>
-            <div class="col-xs-6">
-              <button id="botaoDireita">Próxima Chamada Normal</button>
-              <button id="botaoCima">Próxima Chamada Preferencial</button>
-            </div>
-          </div>
-        </div>
+        <button id="botaoDireita">Próxima Chamada Normal</button>
+        <button id="botaoCima">Próxima Chamada Preferencial</button>
       </nav>
-
+    </header>
+    
+    <div class="container page">
       <div class="container-principal">
         <img
           class="bg-default"
