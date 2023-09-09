@@ -69,25 +69,6 @@ body {
 	aspect-ratio: 16/9;
 }
 
-/* .container-page {
-	width: 100%;
-}
-
-.container-principal {
-	display: flex;
-	width: 100%;
-}
-
-.container-senhas {
-	background-color: #465863;
-	width: 35%;
-}
-
-.bg-default {
-	width: 65%;
-	aspect-ratio: 16/9;
-}
-*/
 .senhaAtual{
 	display: flex;
     text-align: center;
