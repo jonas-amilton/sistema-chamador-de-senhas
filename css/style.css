@@ -127,6 +127,12 @@ body {
 	color: black;
 }
 
+.container-horas{
+	margin: 1em;
+	background-color: #301a9e;
+	color: #fff;
+}
+
 audio {
   display: none;
 }
