@@ -23,6 +23,11 @@ body {
   align-items: flex-end;
 }
 
+.container-img{
+	background-color: aqua;
+	width: 80%;
+}
+
 .column-right {
 	background-color: rgb(124, 140, 155);
     width: 20%;
@@ -35,6 +40,31 @@ body {
   width: 100%;
   height: 20%;
   color: #fff;
+}
+
+.wrap {
+	flex-wrap: wrap;
+}
+
+.container {
+	max-width: 100vw;
+	height: auto;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+}
+/* Flex Item */
+.item {
+	/* O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container. */
+	flex: 1;
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.item img{
+	width: 100%;
 }
 
 /* .container-page {
