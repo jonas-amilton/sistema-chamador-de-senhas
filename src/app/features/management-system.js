@@ -1,9 +1,14 @@
 // Função que preenche um número com zeros à esquerda para atingir o tamanho desejado
-function pad(num, size) {
-  let s = num + "";
-  while (s.length < size) s = "0" + s;
-  return s;
+function select(currentPassword, size) {
+  let password = currentPassword + "";
+
+  while (password.length < size){
+    password = "0" + password
+  };
+
+  return password;
 }
+
 
 // Espera até que o DOM esteja completamente carregado para executar o código
 document.addEventListener("DOMContentLoaded", function () {
@@ -27,8 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
       let senha = parseInt(senhaNormal.value) + 1;
 
-      senhaAtual.innerHTML = pad(senha, 4);
-      senhaNormal.value = pad(senha, 4);
+      senhaAtual.innerHTML = select(senha, 4);
+      senhaNormal.value = select(senha, 4);
 
       // Reproduz o áudio de chamada
       audioChamada.play();
@@ -45,8 +50,8 @@ document.addEventListener("DOMContentLoaded", function () {
       // Atualiza a última senha normal e gera uma nova senha decrementada
       ultimaSenhaNormal.innerHTML = senhaAtual.innerHTML;
       let senha = parseInt(senhaNormal.value) - 1;
-      senhaAtual.innerHTML = pad(senha, 4);
-      senhaNormal.value = pad(senha, 4);
+      senhaAtual.innerHTML = select(senha, 4);
+      senhaNormal.value = select(senha, 4);
     });
 
   // Adiciona um ouvinte de evento ao botão "Preferencial"
@@ -59,8 +64,8 @@ document.addEventListener("DOMContentLoaded", function () {
   //   // Atualiza a última senha preferencial e gera uma nova senha de prioridade
   //   ultimaSenhaPreferencial.innerHTML = senhaAtual.innerHTML;
   //   let senha = parseInt(senhaPrior.value.replace("P", "")) + 1;
-  //   senhaAtual.innerHTML = "P" + pad(senha, 3);
-  //   senhaPrior.value = "P" + pad(senha, 3);
+  //   senhaAtual.innerHTML = "P" + select(senha, 3);
+  //   senhaPrior.value = "P" + select(senha, 3);
 
   //   // Reproduz o áudio de chamada
   //   audioChamada.play();
@@ -76,17 +81,17 @@ document.addEventListener("DOMContentLoaded", function () {
   //   // Atualiza a última senha preferencial e gera uma nova senha de prioridade decrementada
   //   ultimaSenhaPreferencial.innerHTML = senhaAtual.innerHTML;
   //   let senha = parseInt(senhaPrior.value.replace("P", "")) - 1;
-  //   senhaAtual.innerHTML = "P" + pad(senha, 3);
-  //   senhaPrior.value = "P" + pad(senha, 3);
+  //   senhaAtual.innerHTML = "P" + select(senha, 3);
+  //   senhaPrior.value = "P" + select(senha, 3);
 
   //   // Atualiza a próxima senha normal
-  //   proximaSenha.innerHTML = pad(
+  //   proximaSenha.innerHTML = select(
   //     parseInt(document.getElementById("senhaNormal").value) + 1,
   //     4
   //   );
 
   //   // Atualiza a próxima senha preferencial
-  //   proximaSenha.innerHTML = pad(
+  //   proximaSenha.innerHTML = select(
   //     parseInt(document.getElementById("senhaPrioridade").value) + 1,
   //     4
   //   );
