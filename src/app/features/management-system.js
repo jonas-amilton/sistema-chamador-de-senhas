@@ -1,3 +1,8 @@
+// todo: instalar node js
+
+let fakeDb = [1, 2, 3, 4, 5];
+let currentIndex = 0; // Variável para rastrear o índice atual no array fakeDb
+
 // Função que preenche um número com zeros à esquerda para atingir o tamanho desejado
 function select(currentPassword, size) {
   let password = currentPassword + "";
@@ -27,18 +32,25 @@ function callPassword(passwordCall) {
       let ultimaSenha = document.getElementById("senhaAnterior");
       let audioChamada = document.getElementById("audioChamada");
 
-      console.log(senhaAtual);
+      // Verifica se há senhas restantes no array fakeDb
+      if (currentIndex < fakeDb.length) {
+        // Obtém a próxima senha do array
+        let senha = fakeDb[currentIndex];
 
-      // Atualiza a última senha normal e gera uma nova senha
-      passwordCall.innerHTML = senhaAtual.innerHTML;
+        // Atualiza as senhas nos elementos do DOM
+        passwordCall.innerHTML = senhaAtual.innerHTML;
+        senhaAtual.innerHTML = select(senha, 4);
+        ultimaSenha.value = select(senha, 4);
 
-      let senha = parseInt(ultimaSenha.value) + 1;
+        // Incrementa o índice para a próxima chamada
+        currentIndex++;
 
-      senhaAtual.innerHTML = select(senha, 4);
-      ultimaSenha.value = select(senha, 4);
-
-      // Reproduz o áudio de chamada
-      audioChamada.play();
+        // Reproduz o áudio de chamada
+        audioChamada.play();
+      } else {
+        // Caso não haja mais senhas no array, você pode exibir uma mensagem ou tomar alguma ação apropriada.
+        alert("Não há mais senhas disponíveis.");
+      }
     });
 
   // Adiciona um ouvinte de evento ao botão "Anterior Normal"
@@ -49,12 +61,19 @@ function callPassword(passwordCall) {
       let senhaAtual = document.getElementById("senhaAtualNumero");
       let ultimaSenha = document.getElementById("senhaAnterior");
 
-      // Atualiza a última senha normal e gera uma nova senha decrementada
-      passwordCall.innerHTML = senhaAtual.innerHTML;
+      // Verifica se é possível voltar para uma senha anterior
+      if (currentIndex > 0) {
+        // Obtém a senha anterior do array
+        currentIndex--;
+        let senha = fakeDb[currentIndex];
 
-      let senha = parseInt(ultimaSenha.value) - 1;
-
-      senhaAtual.innerHTML = select(senha, 4);
-      ultimaSenha.value = select(senha, 4);
+        // Atualiza as senhas nos elementos do DOM
+        passwordCall.innerHTML = senhaAtual.innerHTML;
+        senhaAtual.innerHTML = select(senha, 4);
+        ultimaSenha.value = select(senha, 4);
+      } else {
+        // Caso não haja senhas anteriores, você pode exibir uma mensagem ou tomar alguma ação apropriada.
+        alert("Não há mais senhas anteriores.");
+      }
     });
 }
