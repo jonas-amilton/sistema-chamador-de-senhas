@@ -13,8 +13,6 @@
   <body onload="time()">
     <header>
       <nav>
-        <button id="anteriorPreferencial">Chamada Anterior Preferencial</button>
-        <button id="proximaPreferencial">Próxima Chamada Preferencial</button>
 
         <button id="anteriorNormal">Chamada Anterior Normal</button>
         <button id="proximaNormal">Próxima Chamada Normal</button>
@@ -36,8 +34,8 @@
           <div>
             <span id="senhaAtualNumero">0000</span>
           </div>
-          <input type="hidden" id="senhaNormal" value="0000" />
-          <input type="hidden" id="senhaPrioridade" value="P000" />
+          <input type="hidden" id="senhaAnterior" value="0000" />
+          <!-- <input type="hidden" id="senhaPrioridade" value="P000" /> -->
         </div>
       </div>
       <div class="item">
@@ -49,6 +47,7 @@
             <span id="ultimaSenhaNumero">0000</span>
           </div>
 
+          <!--somente para ilustrar como vai ficar apos implementar o bd-->
           <div class="ultimaSenhaPreferencial">
             <br />
             <span id="ultimaSenhaTextoPreferencial"
