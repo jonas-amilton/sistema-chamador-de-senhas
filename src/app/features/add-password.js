@@ -9,24 +9,19 @@ function addPassword() {
   );
 
   if (newPassword === 1) {
-    let normal = {
-      password: 'Normal',
-    };
+   
 
-    database.push(normal);
+    database.push('normal');
 
   } else if (newPassword === 2) {
-    let preferencial = {
-      password: 'Preferencial',
-    };
+ 
 
-    database.push(preferencial);
+    database.push('preferencial');
 
   }else{
     alert('Operação Cancelada')
   }
 
-  console.log(database);
 
   // Convertendo o objeto JavaScript em uma string JSON
   let databaseLocalStorage = JSON.stringify(database);

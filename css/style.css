@@ -79,12 +79,12 @@ body {
 }
 
 .senhaAtualTexto{
-	font-size: 30pt;
+	font-size: 16pt;
 	font-weight: 300;
 }
 
 #senhaAtualNumero{
-	font-size: 60pt;
+	font-size: 50pt;
 	font-weight: 600;
 }
 
@@ -92,7 +92,7 @@ body {
 	font-weight: 800;
 	text-align: center;
 	background-color: #ccc;
-	height: 6em;
+	height: 12em;
 	margin-top: 20px;
 	width: 100%;
 }

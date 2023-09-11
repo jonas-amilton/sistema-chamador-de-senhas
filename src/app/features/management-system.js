@@ -1,6 +1,28 @@
 // todo: instalar node js
 
-let fakeDb = [1, 2, 3, 4, 5];
+let passwordList = [];
+
+if (localStorage.getItem("database") !== null) {
+  let databaseString = localStorage.getItem("database");
+  let database = JSON.parse(databaseString);
+
+  for (let i = 0; i < database.length; i++) {
+    if (database[i] === "normal") {
+      passwordList.push(`NORMAL ${[i]}`);
+    } else if (database[i] === "preferencial") {
+      passwordList.push(`PREFERENCIAL ${[i]}`);
+    } else {
+      console.log("cadastre uma senha");
+    }
+  }
+} else {
+  alert("Nenhuma senha cadastrada.");
+}
+
+console.log(passwordList);
+
+// let fakeDb = [1, 2, 3, 4, 5];
+
 let currentIndex = 0; // Variável para rastrear o índice atual no array fakeDb
 
 // Função que preenche um número com zeros à esquerda para atingir o tamanho desejado
@@ -33,9 +55,9 @@ function callPassword(passwordCall) {
       let audioChamada = document.getElementById("audioChamada");
 
       // Verifica se há senhas restantes no array fakeDb
-      if (currentIndex < fakeDb.length) {
+      if (currentIndex < passwordList.length) {
         // Obtém a próxima senha do array
-        let senha = fakeDb[currentIndex];
+        let senha = passwordList[currentIndex];
 
         // Atualiza as senhas nos elementos do DOM
         passwordCall.innerHTML = senhaAtual.innerHTML;
@@ -65,7 +87,7 @@ function callPassword(passwordCall) {
       if (currentIndex > 0) {
         // Obtém a senha anterior do array
         currentIndex--;
-        let senha = fakeDb[currentIndex];
+        let senha = passwordList[currentIndex];
 
         // Atualiza as senhas nos elementos do DOM
         passwordCall.innerHTML = senhaAtual.innerHTML;
