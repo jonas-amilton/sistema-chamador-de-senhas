@@ -2,7 +2,7 @@
 
 ![Captura de Tela](sistema-chamador-de-senhas.jpeg)
 
-Este é um projeto de refatoração em JavaScript puro de um sistema de chamada de senhas originalmente desenvolvido em jQuery.
+Não é um simples fork com layout diferente, foram implementadas diversas funcionalidades, não é mais utilizado Jquery e Bootstrap. Este é um projeto de refatoração em JavaScript puro de um sistema de chamada de senhas originalmente desenvolvido em jQuery.
 
 O código original foi baseado no projeto [SistemachamadordeSenhaJS](https://github.com/luisotavioosi/SistemachamadordeSenhaJS.git) por [Luis Teles](https://github.com/luisotavioosi/).
 
