@@ -2,8 +2,6 @@
 
 Aplicação de gerenciamento e chamada de senhas para múltiplas unidades, serviços e guichês. Esta versão evolui o protótipo original em JavaScript puro para uma aplicação persistente, transacional e testada em Laravel 13 com React e TypeScript.
 
-![Protótipo legado](docs/legacy/sistema-chamador-de-senhas.jpeg)
-
 ## Funcionalidades
 
 - Totem público para emissão normal ou prioritária, sem coleta de dados pessoais.
